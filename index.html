@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Airdropper</title>
+  </head>
+  <body>
+    <h1>Airdropper – Batch ERC-20 Token Airdrop</h1>
+
+    <div>
+      <label>Token Address</label><br/>
+      <input id="token" type="text" placeholder="0xTokenAddress" />
+    </div>
+    <br/>
+
+    <div>
+      <label>Recipient Addresses (comma separated)</label><br/>
+      <textarea id="recipients" style="width:300px;height:100px;" placeholder="0x123...,0xabc..."></textarea>
+    </div>
+    <br/>
+
+    <div>
+      <label>Total Amount (in token's smallest unit)</label><br/>
+      <input id="amount" type="number" placeholder="1000000000000000000" />
+    </div>
+    <br/>
+
+    <button id="airdrop">Send Airdrop</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
